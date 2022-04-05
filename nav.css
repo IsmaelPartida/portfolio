@@ -1,22 +1,30 @@
-#body{
+body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 #Nav {
     background-color: #000;
     color: #f2f2f2;
-    text-align: center;
     font-size: 17px;
     position:fixed;
     width: 100%;
     top:0%;
     z-index: 10000;
-
 }
+    #Nav p{
+        display: inline;
+        float: left;
+        border: 2px dashed #FF0000;
+    }
+    #Nav div#Nav_links{
+        float:right;
+        height: 100%;
+        width: auto;
+    }
     #Nav li{
-       display: inline;
-       text-align: center;
-       margin: 0 0 0 0;
+       display: inline-block;
+       border: 2px dashed #FF0000;
+       margin: 0 0;
        padding: 14px 16px;
     }
     #Nav li a {
@@ -29,15 +37,37 @@
        color: #00ff00;
     }
 #more_body{
-    margin-top: 100px;
     background-color: #ffffff;
-    z-index: auto;
+    margin-top: 50px;
 }
-.social_network{
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    width: 75px;
-    height: 75px;
+#Contact{
+    background-color: #000;
 }
+    #Contact p{
+        
+        text-align: center;
+        color: whitesmoke;
+        font-size: x-large;
+    }
+    #Contact svg.button_social_network{
+        width: 50px;
+        height: 50px;
+    }
+    #Contact svg image#github_button{
+        margin-left: 50%;
+        margin-right: 50%;
+        height: 50px;
+        width: 50px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    }
+    #Contact svg image#gmail_button{
+        margin-left: 50%;
+        margin-right: 50%;
+        height: 50px;
+        width: 50px;
+        filter: invert(16%) sepia(100%) saturate(7157%) hue-rotate(2deg) brightness(116%) contrast(122%);
+    }
+    #Contact div{
+        display: inline-block;
+        border: 2px dashed #444;
+    }
