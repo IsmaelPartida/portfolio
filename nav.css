@@ -1,20 +1,23 @@
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(255,0,202,1) 50%, rgba(23,155,209,1) 100%); 
 }
 #Nav {
     background-color: #000;
+    overflow: hidden;
     color: #f2f2f2;
-    font-size: 17px;
+    font-size: 15px;
     position:fixed;
     width: 100%;
+    height: 50px;
     top:0%;
     z-index: 10000;
 }
     #Nav p{
         display: inline;
         float: left;
-        border: 2px dashed #FF0000;
     }
     #Nav div#Nav_links{
         float:right;
@@ -23,7 +26,6 @@ body{
     }
     #Nav li{
        display: inline-block;
-       border: 2px dashed #FF0000;
        margin: 0 0;
        padding: 14px 16px;
     }
@@ -36,13 +38,21 @@ body{
        background-color: #ddd;
        color: #00ff00;
     }
-#more_body{
-    background-color: #ffffff;
-    margin-top: 50px;
-}
+
+    #more_body{
+        margin-top: 50px;
+        height:60%;
+    }
 #Contact{
+    position: relative;
+    width: 100%;
+    bottom: 0;
     background-color: #000;
 }
+    #Contact div{
+        display: flex;
+        justify-content: space-evenly;
+    }
     #Contact p{
         
         text-align: center;
@@ -65,9 +75,4 @@ body{
         margin-right: 50%;
         height: 50px;
         width: 50px;
-        filter: invert(16%) sepia(100%) saturate(7157%) hue-rotate(2deg) brightness(116%) contrast(122%);
-    }
-    #Contact div{
-        display: inline-block;
-        border: 2px dashed #444;
     }
